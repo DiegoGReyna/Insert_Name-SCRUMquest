@@ -1,15 +1,25 @@
 import React from 'react';
 import { Main } from './pages/main';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Login } from './pages/login';
+import { CreateUser } from './pege/CreateUser/CreateUser';
+import { LogIn } from './pege/LogIn/LogIn';
+import { BrowserRouter as Router, Route, Routes,BrowserRouter} from 'react-router-dom';
+// import { Login } from './pages/login';
 
 export const App = () => (
-  <div className="App">
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Login />}></Route>
-        <Route exact path="/main" element={<Main />}></Route>
-      </Routes>
-    </Router>
-  </div>
+  <BrowserRouter>
+    <div className="App">
+
+        <Routes>
+
+            {/* <Route exact path="/" element={<LogIn />}></Route>
+            <Route exact path="/main" element={<Main />}></Route> */}
+
+              <Route exact path="/" element={<LogIn />}></Route>
+              <Route exact path="/CrearCuenta" element={<CreateUser />}></Route>
+
+
+        </Routes>
+
+    </div>
+  </BrowserRouter>
 );

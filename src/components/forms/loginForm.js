@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Container } from 'reactstrap';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
+import './loginForm.css'
 
 export default class LoginForm extends React.Component {
   constructor(props) {
@@ -44,11 +45,6 @@ export default class LoginForm extends React.Component {
               value: true,
               errorMessage: 'Please enter your password',
             },
-            /*pattern: {
-              value: '^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$',
-              errorMessage:
-                'Your password must be composed only with letter and numbers',
-            },*/
             minLength: {
               value: 10,
               errorMessage: 'Your password must be between 6 and 16 characters',
@@ -59,9 +55,12 @@ export default class LoginForm extends React.Component {
             },
           }}
         />
-        <Button id="submit" className="w-100">
-          Submit
-        </Button>
+        <Container className='ButtonsLogIn row justify-content-around' >
+          <Button className="w-25" >Registrarse</Button>
+          <Button id="submit" className="w-25">
+            Ingresar
+          </Button>
+        </Container>
       </AvForm>
     );
   }
