@@ -4,6 +4,7 @@ import { Modalcreategroup } from '../../component/Modals/Modalcreategroup/Modalc
 import { Modalcreatequest } from '../../component/Modalcreatequest/Modalcreatequest';
 import { Modaleditquest } from '../../component/Modaleditquest/Modaleditquest';
 import { today } from '../../utils/today';
+import { Modalfinishquest } from '../../component/Modalfinishquest/Modalfinishquest';
 import {
   Button,
   Modal,
@@ -17,25 +18,34 @@ import {
 } from 'reactstrap';
 
 export const Modaltest = () => {
-  const [openModal,setOpenModal]=useState(false);
+  const [openModalC,setOpenModalC]=useState(false);
+  const [openModalE,setOpenModalE]=useState(false);
+  const [openModalF,setOpenModalF]=useState(false);
   return (
     <div>
 
       <Navbarheader />
 
       <Button   onClick={()=>{
-        setOpenModal(true);
+        setOpenModalC(true);
       }}  color="danger">
           Crear Quest
         </Button>
-        {openModal&& <Modalcreatequest CloseModal={setOpenModal} />}
+        {openModalC&& <Modalcreatequest CloseModal={setOpenModalC} />}
 
         <Button   onClick={()=>{
-        setOpenModal(true);
+        setOpenModalE(true);
       }}  color="danger">
           Editar Quest
         </Button>
-        {openModal&& <Modaleditquest CloseModal={setOpenModal} Name="Quest1" From={today()} To={today()}/>}
+        {openModalE&& <Modaleditquest CloseModal={setOpenModalE} Name="Quest1" From={today()} To={today()}/>}
+
+        <Button   onClick={()=>{
+        setOpenModalF(true);
+      }}  color="danger">
+          Finalizar Quest
+        </Button>
+        {openModalF&& <Modalfinishquest CloseModal={setOpenModalF} Name="Quest1"  />}
     </div>
   )
 }
