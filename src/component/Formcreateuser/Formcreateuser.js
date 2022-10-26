@@ -1,51 +1,44 @@
 import React,{useState}from 'react'
-import { ContainerCreateUser } from './style'
+import { ContainerCreateUser ,CarImageUser,SubTitle,ImageUser,ContainerImg,InputFile,LabelInputFile} from './style'
 import { Form,Button,FormGroup,Input,Label,Row ,Col,Card,CardBody,CardTitle,CardSubtitle ,CardText ,CardLink  } from 'reactstrap';
 
 import "./Formcreateuser.css"
 import { Link } from 'react-router-dom';
 export const Formcreateuser = () => {
-
+  const[imgPreview,setImgPreview]=useState(null);
   const handleSubmit=(e)=>{
     e.preventDefault();
     console.log("iniciando secion")
   }
 
   return (
-    <ContainerCreateUser lg="12">
+    <ContainerCreateUser>
       <div className='ContainerTitle'>
         <h1>Registrar usuario</h1>
       </div>
-
         <Form onSubmit={handleSubmit} className='Formcreateuser' >
-          <Row lg="12">
-            <Col lg="6">
-              <Row lg="12">
-                <Card>
+          <Row className="h-100" lg="12">
+            <Col  lg="6">
+              <Col className="h-100" lg="12">
+                <CarImageUser>
                   <CardBody>
-                    <CardTitle tag="h5">
-                      Card title
-                    </CardTitle>
+                    <SubTitle>Imagen de usuario</SubTitle>
+                  </CardBody>
+                  <ContainerImg>
+                   <ImageUser >
 
-                  </CardBody>
-                  <img
-                    alt="Card cap"
-                    src="https://picsum.photos/318/180"
-                    width="100%"
-                  />
+                   </ImageUser>
+                  </ContainerImg>
                   <CardBody>
-                    <CardLink href="#">
-                      Card Link
-                    </CardLink>
-                    <CardLink href="#">
-                      Another Link
-                    </CardLink>
+                     <LabelInputFile htmlFor="InputFile" >Subir imagen</LabelInputFile>
+                     <InputFile id='InputFile'  type="file" ></InputFile>
                   </CardBody>
-                </Card>
-            </Row>
+                </CarImageUser>
+            </Col>
             </Col>
             <Col lg="6">
-              <FormGroup>
+            <Row className="h-100" lg="12">
+              <FormGroup  >
                 <Label className="LabelInput" for="IdEmail">
                   Correo electronico
                 </Label>
@@ -89,13 +82,14 @@ export const Formcreateuser = () => {
                     type="password"
                   />
               </FormGroup>
-              <Row lg="12">
+              <Row className="justify-content-center" lg="12">
                 <Col className='ColButton' lg="6">
                     <Button  type='submit'>Registrarse</Button>
                 </Col>
                 <Col className='ColButton' lg="6">
                     <Link className='LinkButton'to="/">Volver</Link>
                 </Col>
+            </Row>
             </Row>
             </Col>
           </Row>

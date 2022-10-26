@@ -1,5 +1,6 @@
 import React from 'react'
 import {BackGround } from '../LogIn/LogInStyle';
+import {ContainerCreateUser,RowCreateUser} from './style'
 import{Navbarheader} from "../../component/Navbarheader/Navbarheader"
 import { Formcreateuser } from '../../component/Formcreateuser/Formcreateuser';
 import {
@@ -15,15 +16,21 @@ export const CreateUser = () => {
     <BackGround fluid className="w-100">
         <Navbarheader/>
 
-          <Container fluid className="h-75 justify-content-center mt-5" lg="12">
-           <Row className="h-100 justify-content-center">
-              <Col className="h-75" lg="6">
+          {/* <Container fluid className="h-75 justify-content-center mt-5" lg="12">
+            <Row className="h-100 justify-content-center">
+              <Col className="h-100" lg="6">
                 <Formcreateuser />
               </Col>
-
               </Row>
 
-          </Container>
+          </Container> */}
+
+          <ContainerCreateUser>
+            <RowCreateUser>
+               <Formcreateuser />
+            </RowCreateUser>
+          </ContainerCreateUser>
+
 
       </BackGround>
   )

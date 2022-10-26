@@ -1,9 +1,16 @@
-import React from 'react'
+import React,{useState}from 'react'
 import { BackGoundContainer,h1LogIn } from './style.js'
 import { Form,Button,FormGroup,Input,Label,Row ,Col} from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import './Formstyle.css'
 export const FormlogIn = () => {
+  const navigate=useNavigate();
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        navigate('/User')
+
+        console.log(`${UserEmail},${UserPassword}`);
+    }
   return (
 
     <BackGoundContainer>
@@ -11,7 +18,7 @@ export const FormlogIn = () => {
         <h1>¡Bienvenido!</h1>
       </div>
 
-      <Form className='FormLoging'>
+      <Form onSubmit={handleSubmit} className='FormLoging'>
         <FormGroup>
           <Label className="LabelInput" for="IdUser">
             Nombre de usuario
