@@ -21,13 +21,13 @@ export const Modalcreategroup = ({CloseModal}) => {
 
   return (
     <BackGroundModal>
-          <ModalCard>
+          <ModalCard MyWidth={"50%"} MyHeight={"50%"} MyGridTemplateRows={"5% 85% 10%"} >
               <ModalRowReverse>
                <Button onClick={()=>CloseModal(false)}  >X</Button>
               </ModalRowReverse>
               <ModalForm onSubmit={handleSubmit}>
+                <GroupModalCol MyWidth="90%">
 
-                <GroupModalCol>
                   <TitleModal>Crear grupo</TitleModal>
                     <FormGroup>
                       <Label className="LabelInput" for="IdGroup">
@@ -53,18 +53,16 @@ export const Modalcreategroup = ({CloseModal}) => {
                     </FormGroup>
 
 
-                    <RowCenter>
+                    <RowCenter MyGridTemplateColumns="20% 20%" MyGap="5px">
 
-                          <Button   type='submit'  >submit</Button>
+
                           <Button   name="cancel"
                           onClick={()=>CloseModal(false)} >Cancelar</Button>
+                          <Button   type='submit'  >Crear</Button>
 
                           </RowCenter>
 
                   </GroupModalCol>
-
-
-
               </ModalForm>
           </ModalCard>
     </BackGroundModal>
