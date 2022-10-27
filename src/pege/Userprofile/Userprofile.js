@@ -13,7 +13,7 @@ export const Userprofile = () => {
       <Navbarheader />
       <RowContainer>
         <Navbargroups />
-        <Profileinfocontainer Name={"Usuario1"} Level={"1"} LvTitle={"Principiante"} curExp={0} nextExp={5} img={imageManager(6)}></Profileinfocontainer>
+        <Profileinfocontainer Name={"Usuario1"} Level={"1"} LvTitle={"Principiante"} curExp={0} nextExp={5} img={imageManager(2)} Pass={"1234Contra"}></Profileinfocontainer>
       </RowContainer>
     </ProfileContainer>
   )
