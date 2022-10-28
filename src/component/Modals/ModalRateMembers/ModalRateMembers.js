@@ -33,11 +33,11 @@ export const ModalRateMembers = ({CloseModalReteMembers}) => {
 
                         <ContainerRateMembers>
                             <RateMember Name={"Diego31"} Email={"DiegoReyna31@Outlook.com"} Rol={"Front-end"} />
-                            <RateMember Name={"Diego31"} Email={"DiegoReyna31@Outlook.com"} Rol={"Front-end"} />
-                            <RateMember Name={"Diego31"} Email={"DiegoReyna31@Outlook.com"} Rol={"Front-end"} />
-                            <RateMember Name={"Diego31"} Email={"DiegoReyna31@Outlook.com"} Rol={"Front-end"} />
-                            <RateMember Name={"Diego31"} Email={"DiegoReyna31@Outlook.com"} Rol={"Front-end"} />
-                            <RateMember Name={"Diego31"} Email={"DiegoReyna31@Outlook.com"} Rol={"Front-end"} />
+                            <RateMember Name={"Jose"} Email={"Jose@Outlook.com"} Rol={"Front-end"} />
+                            <RateMember Name={"Maria"} Email={"Maria@Outlook.com"} Rol={"Front-end"} />
+                            <RateMember Name={"Miguel_00"} Email={"XxMiguel360xX@Outlook.com"} Rol={"Back-end"} />
+                            <RateMember Name={"Alejandro20"} Email={"Alejandro@Outlook.com"} Rol={"Back-end"} />
+                            <RateMember Name={"Julian01"} Email={"Julian200@Outlook.com"} Rol={"Back-end"} />
                         </ContainerRateMembers>
 
 
@@ -45,7 +45,7 @@ export const ModalRateMembers = ({CloseModalReteMembers}) => {
                         <RowCenter MyGridTemplateColumns="20% 20%" MyGap="5px">
                                   <Button   name="cancel"
                                   onClick={()=>CloseModalReteMembers(false)} >Cancelar</Button>
-                                  <Button   type='submit'  >Calificar</Button>
+                                  <Button   type='submit'  >Listo</Button>
                                   </RowCenter>
                       </GroupModalCol>
               </ModalForm>

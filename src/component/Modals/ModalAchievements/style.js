@@ -30,6 +30,8 @@ export const ContainerAchievements = styled.div`
         width: 1rem !important;
 
     }
+
+
   }
 
       ::-webkit-scrollbar{

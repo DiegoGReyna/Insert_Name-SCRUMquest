@@ -57,6 +57,15 @@ export const ContainerRateMembers = styled.div`
         width: 1rem !important;
 
     }
+
+    @media (max-width: 520px) {
+      height: 15rem;
+
+
+
+    }
+
+
   }
 
       ::-webkit-scrollbar{
