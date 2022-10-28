@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import {
-  Button
-} from 'reactstrap';
 
 export const BackGroundModal = styled.div`
    background: rgba(11, 115, 186, 0.15);
@@ -13,15 +10,40 @@ export const BackGroundModal = styled.div`
     top:0%;
     justify-items: center;
     align-items: center;
+
+    & Button[name=Accept]{
+    font-family: 'Press Start 2P', cursive;
+    color: #F0F2F5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    background-color: #1282A2;
+    }
+
+    & Button[name=Accept]:hover{
+        background-color:#30B61A;
+        border-color:transparent;
+      }
+
+      @media (max-width: 970px) {
+        & Button[name=Accept]{
+          font-size: 1.5vw;
+
+
+       }
+    }
+
+
+
 `;
 
 export const ModalCard = styled.div`
       background: #D9D9D9;
     box-shadow: 2px 4px 20px 20px;
     border-radius: 5px;
-    width: 50%;
-    height: 50%;
-    grid-template-rows: 5% 85% 10%;
+    min-width:${(props)=>props.MyWidth};
+    min-height:${(props)=>props.MyHeight};
+    grid-template-rows:${(props)=>props.MyGridTemplateRows};
     display: grid;
 
 `;
@@ -57,11 +79,12 @@ export const ModalForm = styled.form`
 
 
 export const GroupModalCol = styled.div`
-      display: grid;
-    width: 90%;
-    height: 100%;
+   display: grid;
+   min-width:${(props)=>props.MyWidth};
+    min-height: 100%;
     align-items: center;
     align-content: space-between;
+    justify-items:${(props)=>props.MyJustifyItems};
 `;
 
 
@@ -117,8 +140,10 @@ export const ModalRowReverse = styled.div`
 export const RowCenter = styled.div`
         display: grid;
     width: 100%;
-    grid-template-columns: 20% 20%;
-    gap: 5px;
+    grid-template-columns:${(props)=>props.MyGridTemplateColumns};
+    gap:${(props)=>props.MyGap};
+    /* grid-template-columns: 20% 20%; */
+    /* gap: 5px; */
     justify-content: center;
 
 

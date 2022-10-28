@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Navbarheader } from '../../component/Navbarheader/Navbarheader';
 import { Modalcreategroup } from '../../component/Modals/Modalcreategroup/Modalcreategroup';
+import { ModalAchievements } from '../../component/Modals/ModalAchievements/ModalAchievements';
+import { ModalRateMembers } from '../../component/Modals/ModalRateMembers/ModalRateMembers';
 import {
   Button,
   Modal,
@@ -14,7 +16,9 @@ import {
 } from 'reactstrap';
 
 export const Userpage = () => {
-  const [openMoal,setOpenModal]=useState(false);
+  const [openModal,setOpenModal]=useState(false);
+  const [openModalAchievements,setOpenModalAchievements]=useState(false);
+  const [openModalRateMembers,setOpenModalRateMembers]=useState(false);
   return (
     <div>
 
@@ -23,9 +27,24 @@ export const Userpage = () => {
       <Button   onClick={()=>{
         setOpenModal(true);
       }}  color="danger">
-          Click Me
+          Agregar grupo
         </Button>
-        {openMoal&& <Modalcreategroup CloseModal={setOpenModal} />}
+        <Button   onClick={()=>{
+        setOpenModalAchievements(true);
+      }}  color="danger">
+        Logros
+        </Button>
+
+        <Button   onClick={()=>{
+        setOpenModalRateMembers(true);
+      }}  color="danger">
+         Calificar miembros
+        </Button>
+
+
+        {openModal&& <Modalcreategroup CloseModal={setOpenModal} />}
+        {openModalAchievements&& <ModalAchievements CloseModalModalAchievements={setOpenModalAchievements} />}
+        {openModalRateMembers&& <ModalRateMembers CloseModalReteMembers={setOpenModalRateMembers} />}
     </div>
   )
 }
