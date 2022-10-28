@@ -16,7 +16,7 @@ import { BackGroundModal,ModalCard,GroupModalCol,ModalForm,TitleModal ,ModalRowR
 export const Modalcreategroup = ({CloseModal}) => {
   const handleSubmit=(e)=>{
     e.preventDefault();
-    console.log("iniciando secion")
+    console.log("Creado Grupo")
   }
 
   return (
@@ -27,7 +27,6 @@ export const Modalcreategroup = ({CloseModal}) => {
               </ModalRowReverse>
               <ModalForm onSubmit={handleSubmit}>
                 <GroupModalCol MyWidth="90%">
-
                   <TitleModal>Crear grupo</TitleModal>
                     <FormGroup>
                       <Label className="LabelInput" for="IdGroup">
@@ -51,17 +50,11 @@ export const Modalcreategroup = ({CloseModal}) => {
                         type="text"
                       />
                     </FormGroup>
-
-
                     <RowCenter MyGridTemplateColumns="20% 20%" MyGap="5px">
-
-
                           <Button   name="cancel"
                           onClick={()=>CloseModal(false)} >Cancelar</Button>
                           <Button   type='submit'  >Crear</Button>
-
                           </RowCenter>
-
                   </GroupModalCol>
               </ModalForm>
           </ModalCard>

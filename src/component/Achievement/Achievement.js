@@ -17,11 +17,8 @@ export const Achievements = (props) => {
   return (
     <BackgroundAchievement>
           <ContainerImageAchievement>
-
                   <BackgrounImgAchievement>
-
                     <AchievementImg src={Image}>
-
                     </AchievementImg>
                   </BackgrounImgAchievement>
           </ContainerImageAchievement>
