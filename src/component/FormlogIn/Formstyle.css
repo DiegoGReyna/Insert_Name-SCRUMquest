@@ -27,7 +27,9 @@
   position:absolute;
   display: flex;
   top: 15%;
+
 }
+
 .ColButton button{
   background-color: #1282A2;
   width:100%;
@@ -75,3 +77,15 @@
   color:#F0F2F5;
 }
 
+@media (max-height:600px ) {
+  .ContainerTitle{
+    top: 25%;
+  }
+}
+
+@media (max-height:340px ) {
+  .ContainerTitle{
+    top: 40%;
+
+  }
+}

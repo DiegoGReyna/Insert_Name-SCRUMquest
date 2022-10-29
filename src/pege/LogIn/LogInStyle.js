@@ -3,7 +3,7 @@ import BackGroundImage from "../../img/MuroRoto.png"
 export const BackGround = styled.div`
 
   /* background-image: url(${BackGroundImage}); */
-
+  position:fixed;
   height: 100vh;
   background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.7), rgba(2, 2, 2, 0.7)), url(${BackGroundImage});
   border: 1px solid #000000;

@@ -19,7 +19,7 @@ export const App = () => (
             <Route exact path="/main" element={<Main />}></Route> */}
 
               <Route exact path="/" element={<LogIn />}></Route>
-              <Route exact path="/CrearCuenta" element={<CreateUser />}></Route>
+              <Route exact path="/CreateUser" element={<CreateUser />}></Route>
               <Route exact path="/User" element={<Userpage />}></Route>
               <Route exact path ="/Test" element={<Modaltest />}></Route>
               <Route exact path ="/Profile" element={<Userprofile />}></Route>

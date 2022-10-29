@@ -27,16 +27,16 @@ export const ContainerCreateUser = styled.div`
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   }
   & input{
-    font-size: 1.5vh;
+    font-size: 0.8rem;
   }
   & label{
-    font-size: 1.2vh;
+    font-size: 1vw;
   }
   & button{
-    font-size: 1.2vh;
+    font-size: 0.7vw;
   }
   & a{
-    font-size: 1.2vh;
+    font-size: 0.7vw;
   }
 
   &h2{
@@ -48,7 +48,20 @@ export const ContainerCreateUser = styled.div`
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   }
 
-
+  @media (max-width: 980px) {
+    & input{
+    font-size: 0.5rem;
+  }
+  & label{
+    font-size: 1.5vw;
+  }
+  & button{
+    font-size: 1vw;
+  }
+  & a{
+    font-size: 1vw;
+  }
+    }
 
 
 `;

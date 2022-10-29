@@ -165,6 +165,7 @@ export const Cont2 = styled.div`
       flex-direction: row;
       width: 100%;
       justify-content: center;
+      align-items:center;
 `;
 
 export const Piccontainer = styled.div`

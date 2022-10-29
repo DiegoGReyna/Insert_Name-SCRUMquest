@@ -5,13 +5,14 @@ export const ProfileContainer = styled.div`
   background-color: #F0F2F5;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  /* overflow: scroll; */
 `;
 
 export const RowContainer = styled.div`
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
+
 `;
 
 

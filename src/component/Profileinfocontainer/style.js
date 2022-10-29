@@ -17,7 +17,8 @@ export const Title = styled.h1`
 `;
 
 export const Paddedcontainer = styled.div`
-    width: 100%;
+    /* width: 100%; */
+    width: 85%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,16 +34,22 @@ export const Paddedcontainer = styled.div`
     font-weight: 400;
     font-size: 1rem;
     background-color: #1282A2;
-    min-width: 10%;
+    min-width: 15%;
+    @media (max-width: 970px) {
+        font-size: 0.5rem;
+        min-width: 15%;
+      }
    }
 
    & Button:hover{
     background-color: #30B61A;
+
+
    }
 
-   & *{
+   /* & *{
     margin: 5px;
-   }
+   } */
 
 `;
 
@@ -59,5 +66,20 @@ export const Piccontainer = styled.div`
   @media (max-width: 970px) {
     height: 100px;
     width: 100px;
+  }
+`;
+PiccontainerData
+
+export const PiccontainerData = styled.div`
+      width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    @media (max-width: 970px) {
+
+    gap: 0.6rem;
   }
 `;

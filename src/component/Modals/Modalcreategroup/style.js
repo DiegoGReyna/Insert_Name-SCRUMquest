@@ -8,6 +8,7 @@ export const BackGroundModal = styled.div`
     height:100vh;
     display:grid;
     top:0%;
+    left: 0%;
     justify-items: center;
     align-items: center;
 

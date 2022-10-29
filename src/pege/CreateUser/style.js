@@ -5,7 +5,7 @@ export const ContainerCreateUser = styled.div`
 
   display:grid;
   width:100%;
-  height:70%;
+  min-height:70%;
   align-self: center;
   justify-self: center;
 
