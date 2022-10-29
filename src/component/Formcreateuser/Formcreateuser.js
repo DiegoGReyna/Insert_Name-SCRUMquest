@@ -3,12 +3,14 @@ import { ContainerCreateUser ,CarImageUser,SubTitle,ImageUser,ContainerImg,Input
 import { Form,Button,FormGroup,Input,Label,Row ,Col,Card,CardBody,CardTitle,CardSubtitle ,CardText ,CardLink  } from 'reactstrap';
 
 import "./Formcreateuser.css"
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 export const Formcreateuser = () => {
   const[imgPreview,setImgPreview]=useState(null);
+  const navigate=useNavigate();
   const handleSubmit=(e)=>{
     e.preventDefault();
     console.log("iniciando secion")
+    navigate('/User')
   }
 
   return (
@@ -51,7 +53,7 @@ export const Formcreateuser = () => {
                 </FormGroup>
                 <FormGroup>
                   <Label className="LabelInput" for="IdUser">
-                    Contraseña
+                    Nombre de usuario
                   </Label>
                   <Input className='InputLogIn'
                     id="IdUser"
@@ -84,7 +86,7 @@ export const Formcreateuser = () => {
               </FormGroup>
               <Row className="justify-content-center" lg="12">
                 <Col className='ColButton' lg="6">
-                    <Button  type='submit'>Registrarse</Button>
+                    <Button   type='submit'>Registrarse</Button>
                 </Col>
                 <Col className='ColButton' lg="6">
                     <Link className='LinkButton'to="/">Volver</Link>

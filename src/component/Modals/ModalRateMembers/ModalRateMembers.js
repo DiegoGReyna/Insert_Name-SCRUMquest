@@ -12,19 +12,24 @@ import {
   FormGroup,
   Row ,Col ,Container
 } from 'reactstrap';
-
 import{QuestName,ContainerRateMembers,SubtitleRateMembers} from './style'
-import { RateMember } from '../../RateMember/RateMember';
+import { RateMember} from '../../RateMember/RateMember';
+import { Link,useNavigate } from 'react-router-dom';
 export const ModalRateMembers = ({CloseModalReteMembers}) => {
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log("Creado Grupo")
-  }
+
+  const navigate=useNavigate();
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        navigate('/Test')
+
+
+    }
   return (
     <BackGroundModal>
+
           <ModalCard MyWidth={"50%"} MyHeight={"80%"} MyGridTemplateRows={"5% 85% 10%"} >
               <ModalRowReverse>
-               <Button onClick={()=>CloseModalReteMembers(false)}  >X</Button>
+               {/* <Button onClick={()=>CloseModalReteMembers(false)}  >X</Button> */}
               </ModalRowReverse>
               <ModalForm onSubmit={handleSubmit}>
               <QuestName>Nombre de la quest</QuestName>
@@ -42,14 +47,15 @@ export const ModalRateMembers = ({CloseModalReteMembers}) => {
 
 
 
-                        <RowCenter MyGridTemplateColumns="20% 20%" MyGap="5px">
-                                  <Button   name="cancel"
-                                  onClick={()=>CloseModalReteMembers(false)} >Cancelar</Button>
-                                  <Button   type='submit'  >Listo</Button>
+                        <RowCenter MyGridTemplateColumns="20%" MyGap="5px">
+                                  {/* <Button   name="cancel"
+                                  onClick={()=>CloseModalReteMembers(false)} >Cancelar</Button> */}
+                                  <Button   type='submit'  onClick={()=>CloseModalReteMembers(false)} >Listo</Button>
                                   </RowCenter>
                       </GroupModalCol>
               </ModalForm>
           </ModalCard>
+
     </BackGroundModal>
   )
 }

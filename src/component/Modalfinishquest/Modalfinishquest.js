@@ -13,14 +13,22 @@ import {
   Row ,Col ,Container
 } from 'reactstrap';
 import { BackGroundModal, ModalCard, GroupModalCol, ModalForm, TitleModal, ModalRowReverse, RowCenter, ModalText } from './style';
+import { ModalRateMembers } from '../Modals/ModalRateMembers/ModalRateMembers';
+import { Link,useNavigate } from 'react-router-dom';
 export const Modalfinishquest = ({CloseModal, Name}) => {
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log("iniciando secion")
-  }
+  const [openModalRateMembers,setOpenModalRateMembers]=useState(false);
+  const navigate=useNavigate();
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        navigate('/Test/RateMembers')
+
+        console.log('holassss');
+        debugger;
+    }
 
   return (
     <BackGroundModal>
+
           <ModalCard>
               <ModalRowReverse>
                <Button onClick={()=>CloseModal(false)}  >X</Button>
@@ -35,15 +43,19 @@ export const Modalfinishquest = ({CloseModal, Name}) => {
                   </ModalText>
                     <RowCenter>
                       <Button   name="cancel" onClick={()=>CloseModal(false)} >Cancelar</Button>
-                      <Button   type='submit'>Continuar</Button>
+                      <Button   type='submit'  onClick={()=>{
+                            navigate('/Test/RateMembers')
+                                    CloseModal(false);
+                                }}>Continuar</Button>
                     </RowCenter>
 
                   </GroupModalCol>
 
-
-
               </ModalForm>
+
           </ModalCard>
+
+
     </BackGroundModal>
   )
 }

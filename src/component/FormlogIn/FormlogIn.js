@@ -20,13 +20,13 @@ export const FormlogIn = () => {
 
       <Form onSubmit={handleSubmit} className='FormLoging'>
         <FormGroup>
-          <Label className="LabelInput" for="IdUser">
-            Nombre de usuario
+          <Label className="LabelInput" for="IdEmail">
+            Correo electronico
           </Label>
           <Input className='InputLogIn'
-            id="IdUser"
+            id="IdEmail"
             name="User"
-            placeholder="Ingrese un nombre de usuario"
+            placeholder="Ingrese un correo electronico"
             type="text"
           />
         </FormGroup>
@@ -44,12 +44,12 @@ export const FormlogIn = () => {
 
       <Row lg="12">
          <Col className='ColButton' lg="6">
-            <Button to="/CrearCuenta" type='submit'>
+            <Button  type='submit'>
               Ingresar
             </Button>
           </Col>
           <Col className='ColButton' lg="6">
-            <Link className='LinkButton'to="/CrearCuenta">Registrarse</Link>
+            <Link className='LinkButton'to="/CreateUser">Registrarse</Link>
           </Col>
       </Row>
       </Form>
