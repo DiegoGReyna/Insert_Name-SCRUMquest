@@ -1,8 +1,8 @@
 import React from 'react';
-import { Main } from './pages/main';
+
 import { CreateUser } from './pege/CreateUser/CreateUser';
 import { LogIn } from './pege/LogIn/LogIn';
-import { Modaltest } from './pege/ModalTest/ModalTest';
+
 import { Userprofile } from './pege/Userprofile/Userprofile';
 import { BrowserRouter as Router, Route, Routes,BrowserRouter} from 'react-router-dom';
 
