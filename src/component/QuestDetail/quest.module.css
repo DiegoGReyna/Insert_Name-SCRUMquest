@@ -1,0 +1,83 @@
+.quest_container {
+  padding: 1rem;
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+}
+
+.quest_title {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  color: white;
+}
+
+.roles_label {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  color: white;
+  font-size: small;
+}
+
+.roles_tag {
+  background-color: yellow;
+}
+
+.tag {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.5rem;
+}
+
+.button_text {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: small !important;
+}
+
+.t_head {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: small;
+  margin: 0;
+}
+
+.col_head {
+  background-color: rgb(11, 115, 186);
+  color: white;
+  width: 30%;
+  padding: 20px 0;
+}
+
+.col_body {
+  width: 30%;
+}
+
+.img_member {
+  width: auto;
+  height: 100%;
+  border-radius: 100%;
+  background-color: skyblue;
+}
+
+.objetivo_color {
+  height: 20px;
+  background-color: yellow;
+}
+
+.objetivo_box {
+  background-color: whitesmoke;
+}
+
+.descripcion_objetivo {
+  min-height: 100px;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: x-small;
+}
+
+.date {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: xx-small;
+}
