@@ -85,11 +85,11 @@ export const Formcreateuser = () => {
                   />
               </FormGroup>
               <Row className="justify-content-center" lg="12">
-                <Col className='ColButton' lg="6">
+                <Col className='ColButtonLG' lg="6">
                     <Button   type='submit'>Registrarse</Button>
                 </Col>
-                <Col className='ColButton' lg="6">
-                    <Link className='LinkButton'to="/">Volver</Link>
+                <Col className='ColButtonLG' lg="6">
+                    <Link className='LinkButtonLG'to="/">Volver</Link>
                 </Col>
             </Row>
             </Row>

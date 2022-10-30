@@ -20,7 +20,7 @@ export const ModalRateMembers = ({CloseModalReteMembers}) => {
   const navigate=useNavigate();
     const handleSubmit=(e)=>{
         e.preventDefault();
-        navigate('/Test')
+        navigate('/User/groups')
 
 
     }

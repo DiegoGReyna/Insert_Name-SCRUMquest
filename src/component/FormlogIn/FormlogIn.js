@@ -9,7 +9,7 @@ export const FormlogIn = () => {
         e.preventDefault();
         navigate('/User')
 
-        console.log(`${UserEmail},${UserPassword}`);
+
     }
   return (
 
@@ -43,12 +43,12 @@ export const FormlogIn = () => {
       </FormGroup>
 
       <Row lg="12">
-         <Col className='ColButton' lg="6">
+         <Col className='ColButtonLG' lg="6">
             <Button  type='submit'>
               Ingresar
             </Button>
           </Col>
-          <Col className='ColButton' lg="6">
+          <Col className='ColButtonLG' lg="6">
             <Link className='LinkButton'to="/CreateUser">Registrarse</Link>
           </Col>
       </Row>

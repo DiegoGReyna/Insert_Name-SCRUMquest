@@ -1,0 +1,48 @@
+.ColButton{
+    background-color: #1282A2;
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vh;
+    color:#fff;
+    padding: 1.5vh;
+    border:0px;
+    border-radius: 0.25rem;
+  }
+  
+  
+  .ColButton:hover{
+    background-color: #30B61A;
+    color:#F0F2F5;
+  }
+
+  .ColButtonRed{
+    background-color: #af0c01;
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vh;
+    color:#fff;
+    padding: 1.5vh;
+    border:0px;
+    border-radius: 0.25rem;
+  }
+  
+  
+  .ColButtonRed:hover{
+    background-color: rgb(214, 78, 78);
+    color:#F0F2F5;
+  }
+
+  .select_rol {
+    display: flex;
+    padding: 10px 20px;
+    background: #f1f2f4;
+    color: gray;
+    font-family: "Press Start 2P", cursive;
+    text-transform: uppercase;
+    font-size: x-small;
+  }
+  .objetivo_name{
+    color:gray
+  }

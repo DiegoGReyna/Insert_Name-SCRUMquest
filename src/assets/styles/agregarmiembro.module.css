@@ -1,0 +1,75 @@
+.modal_agregar_miembro {
+  position: absolute;
+  background-color: lightgray;
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.26);
+  width: 50%;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+
+.modal_backscreen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 255, 0.1);
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: x-small;
+}
+
+.subtitle {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: x-small;
+}
+
+.members_box {
+  max-height: 70%;
+  overflow: auto;
+  width: 90%;
+}
+
+.member {
+  margin-top: 1rem;
+  background-color: white;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  height: 70px;
+  align-items: center;
+}
+
+.member_labels {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: xx-small;
+}
+
+.member_added_label {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  font-size: xx-small;
+  color: green;
+}
+
+.member_img {
+  width: auto;
+  height: 70%;
+  border-radius: 100%;
+  background-color: skyblue;
+}
+
+.button_add {
+  font-size: xx-small !important;
+  padding: 10px !important;
+}

@@ -20,7 +20,7 @@ export const Modalfinishquest = ({CloseModal, Name}) => {
   const navigate=useNavigate();
     const handleSubmit=(e)=>{
         e.preventDefault();
-        navigate('/Test/RateMembers')
+        navigate('/oaoaaasasddds')
 
         console.log('holassss');
         debugger;
@@ -44,7 +44,7 @@ export const Modalfinishquest = ({CloseModal, Name}) => {
                     <RowCenter>
                       <Button   name="cancel" onClick={()=>CloseModal(false)} >Cancelar</Button>
                       <Button   type='submit'  onClick={()=>{
-                            navigate('/Test/RateMembers')
+                            navigate('/User/groups/RateMembers')
                                     CloseModal(false);
                                 }}>Continuar</Button>
                     </RowCenter>
